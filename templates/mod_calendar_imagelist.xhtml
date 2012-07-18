@@ -1,0 +1,26 @@
+
+<?php if ($this->images): ?>
+<!-- indexer::stop -->
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<ul>
+<?php foreach( $this->images as $i => $image ): ?>
+<li class="<?php echo ($i%2 ? 'odd' : 'even') . ($i==0 ? ' first' : '') . (($i==count($this->images)-1) ? ' last' : ''); ?>">
+<div class="image_container">
+<?php if ($image['imageUrl']): ?>
+<a href="<?php echo $image['imageUrl']; ?>"<?php if($image['target']): ?> target="_blank"<?php endif; ?>>
+<?php endif; ?>
+<img src="<?php echo $image['image']; ?>" alt="<?php echo $image['name']; ?>" title="<?php echo $image['name']; ?>"/>
+<?php if ($image['imageUrl']): ?>
+</a>
+<?php endif; ?>
+<?php if ($image['description']): ?>
+<div class="caption"><?php echo $image['description']; ?></div>
+<?php endif; ?>
+</div>
+</li>
+<?php endforeach; ?>
+</ul>
+
+</section>
+<!-- indexer::continue -->
+<?php endif; ?>
