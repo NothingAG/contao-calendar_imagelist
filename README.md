@@ -3,7 +3,7 @@ Extends the Contao calendar events with an image gallery. The images can be sort
 
 ## SETUP AND USAGE
 ### Prerequisites
-* Contao Version 2.10+
+* Contao 2.10+
 * dcawizard [https://github.com/isotope/dcawizard](https://github.com/isotope/dcawizard)
 
 ### Installation
