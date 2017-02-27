@@ -1,3 +1,6 @@
+# [UNMAINTAINED]
+This project is not maintained anymore.
+
 # CONTAO EXTENSION: CALENDAR IMAGE LIST
 Extends the Contao calendar events with an image gallery. The images can be sorted in the backend using drag and drop and support an optional image caption and link. The frontend module renders the images in an unsorted list.
 
